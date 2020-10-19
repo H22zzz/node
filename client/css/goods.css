@@ -1,0 +1,97 @@
+.content {
+  padding: 20px;
+}
+
+.content > .filter,
+.content > .goods_list,
+.content > .pagination {
+  width: 100%;
+  height: 80px;
+  border: 1px solid #333;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.content > .goods_list {
+  height: 600px;
+  overflow: auto;
+  display: block;
+  border: none;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.content > .pagination > select,
+.content > .filter > select {
+  width: 100px;
+  height: 40px;
+  font-size: 20px;
+}
+
+.content > .pagination > select {
+  width: 150px;
+}
+
+.content > .filter > input {
+  padding: 5px 20px;
+  font-size: 20px;
+  margin: 0 50px;
+}
+
+.content > .filter > button {
+  padding: 5px 20px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.content > .pagination ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content > .pagination p,
+.content > .pagination li {
+  padding: 5px;
+  margin: 0 5px;
+  border: 1px solid #333;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.content > .pagination li.active {
+  background-color: orange;
+  color: #fff;
+}
+
+.content > .pagination input {
+  width: 38px;
+  height: 38px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.content > .pagination span {
+  margin-left: 30px;
+  color: #ccc;
+  font-size: 20px;
+}
+
+.content > .goods_list > table {}
+
+
+.content > .goods_list > table th {
+  padding: 0 30px;
+}
+.content > .goods_list > table td {
+  padding: 10px;
+  text-align: center;
+}
+
+.content > .goods_list > table .img {
+  width: 130px;
+  height: 130px;
+}

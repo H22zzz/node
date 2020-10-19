@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/index.css">
+  <link rel="stylesheet" href="../css/banner.css">
+  <link rel="stylesheet" href="//at.alicdn.com/t/font_2052356_mqwv5x29z8n.css">
+</head>
+<body>
+  <div class="box">
+    <div class="header">
+      <div class="left">
+        <a href="/index.html">
+          LOGO
+        </a>
+      </div>
+      <div class="center">
+        轮播图管理模块
+      </div>
+      <div class="right">
+        <p class="nickname">昵称</p>
+        <button class="logout">注销</button>
+      </div>
+    </div>
+    <div class="container">
+      <div class="slide">
+        <div class="item">
+          <i class="iconfont icon-users"></i>
+          <span><a href="/index.html">用户管理</a></span>
+        </div>
+        <div class="item active">
+          <i class="iconfont icon-banner"></i>
+          <span>轮播图管理</span>
+        </div>
+        <div class="item">
+          <i class="iconfont icon-goods"></i>
+          <span><a href="/views/goods.html">商品管理</a></span>
+        </div>
+        <div class="item">
+          <i class="iconfont icon-gerenzhongxin"></i>
+          <span><a href="/views/self.html">个人中心</a></span>
+        </div>
+      </div>
+      <div class="content">
+        <button class="showAdd">添加轮播图</button>
+
+        <div class="content_box">
+          <table border="1" cellspacing="0">
+            <thead>
+              <tr>
+                <th>序号</th>
+                <th>图片</th>
+                <th>地址</th>
+                <th>描述</th>
+                <th>操作</th>
+              </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 添加轮播图的弹出层 -->
+  <div class="addDialog">
+    <span>X</span>
+    <p>添加轮播图</p>
+    <div class="img">
+      <label for="upload">
+        <img src="../images/upload.jpg" alt="">
+      </label>
+    </div>
+    <input type="file" id="upload">
+    <div>
+      图片描述: <input type="text" name="title" autocomplete="off">
+    </div>
+    <button class="upload">提交图片</button>
+  </div>
+
+
+  <!-- 准备模板 -->
+  <script type="text/html" id="bannerTmp">
+    {{ each list v,i }}
+    <tr>
+      <td>{{ i + 1 }}</td>
+      <td>
+        <div>
+          <img src="http://www.shadouyou.com:8080{{ v.img_url }}" alt="">
+        </div>
+      </td>
+      <td>
+        http://www.shadouyou.com:8080{{ v.img_url }}
+      </td>
+      <td>
+        {{ v.img_title }}
+      </td>
+      <td>
+        <button>删除</button>
+        <button data-id="{{ v._id }}" class="editBanner">编辑</button>
+      </td>
+    </tr>
+    {{ /each }}
+  </script>
+
+
+  <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="../node_modules/art-template/lib/template-web.js"></script>
+  <script src="../node_modules/axios/dist/axios.min.js"></script>
+  <script src="../lib/instance.js"></script>
+  <script src="../js/banner.js"></script>
+</body>
+</html>

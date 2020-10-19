@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/login.css">
+</head>
+<body>
+
+  <div class="login">
+    <form id="login">
+      <div class="logo">
+        <img src="../images/logo.jpg" alt="">
+      </div>
+      <label for="email">
+        邮&nbsp;&nbsp;箱: <input autofocus value="493405058" type="text" name="email" autocomplete="off">
+        <button disabled type="button">@qq.com</button>
+      </label>
+      <label>
+        密&nbsp;&nbsp;码: <input type="text" value="223322" name="password" autocomplete="off">
+      </label>
+      <label>
+        验证码: <input type="text" name="code" autocomplete="off">
+        <button type="button">发送验证码</button>
+      </label>
+      <button>登录</button>
+    </form>
+  </div>
+
+  <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="../node_modules/axios/dist/axios.min.js"></script>
+  <script src="../lib/jquery-validate/jquery.validate.min.js"></script>
+  <script src="../lib/instance.js"></script>
+  <script src="../js/login.js"></script>
+</body>
+</html>

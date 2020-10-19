@@ -1,0 +1,128 @@
+.box > .container > .content {
+  padding: 20px;
+
+}
+
+.box > .container > .content > .users {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.box > .container > .content > .users > .left {
+  width: 400px;
+}
+
+.box > .container > .content > .users > .left > form {
+  width: 100%;
+  height: 100%;
+}
+
+
+.box > .container > .content > .users > .left > form > label {
+  display: block;
+  padding-left: 20px;
+  height: 100px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.box > .container > .content > .users > .left > form > label > input {
+  margin-left: 20px;
+  padding: 3px 20px;
+}
+
+.box > .container > .content > .users > .left > form > button {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  cursor: pointer;
+}
+
+.box > .container > .content > .users > .right {
+  width: 800px;
+  margin-left: 20px;
+  overflow: auto;
+}
+
+.box > .container > .content > .users > .right > table {
+  width: 1300px;
+  margin-top: 30px;
+}
+
+.box > .container > .content > .users > .right > table td,
+.box > .container > .content > .users > .right > table th {
+  padding: 5px 20px;
+}
+
+
+.box > .container > .content > .content_box {
+  width: 100%;
+  height: 100%;
+  color: red;
+  font-size: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dialog {
+  width: 700px;
+  height: 600px;
+  padding: 50px;
+  border: 3px solid #333;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  background-color: #fff;
+
+  display: none;
+}
+
+.dialog > span {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 50px;
+  top: 50px;
+  cursor: pointer;
+}
+
+.dialog > p {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+}
+
+.dialog > form > label {
+  display: block;
+  height: 100px;
+  padding-left: 100px;
+}
+
+.dialog > form > label > input,
+.dialog > form > label > select {
+  margin-left: 30px;
+}
+
+.dialog > form > label > input {
+  padding: 5px 20px;
+}
+
+.dialog > form > label > select {
+  width: 200px;
+  height: 40px;
+}
+
+.dialog > form > button {
+  width: 100%;
+  height: 40px;
+  cursor: pointer;
+}

@@ -1,0 +1,104 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.box {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.box > .header {
+  height: 100px;
+  background-color: skyblue;
+}
+
+.box > .container {
+  flex: 1;
+  display: flex;
+}
+
+.box > .container > .slide {
+  width: 250px;
+  background-color: orange;
+}
+
+.box > .container > .content {
+  flex: 1;
+  height: 847px;
+  overflow: auto;
+}
+
+
+.box > .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.box > .header > .left {
+  width: 250px;
+  height: 100%;
+  background-color: #333;
+  color: #fff;
+}
+
+.box > .header > .left > a {
+  color: #fff;
+  font-size: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.box > .header > .center {
+  width: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 60px;
+}
+
+.box > .header > .right {
+  width: 160px;
+  display: flex;
+  padding-right: 30px;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 30px;
+}
+
+.box > .header > .right > button {
+  cursor: pointer;
+  outline: none;
+  line-height: 30px;
+  padding: 5px 10px;
+  font-size: 20px;
+}
+
+.box > .container > .slide {
+  box-sizing: border-box;
+  padding-top: 30px;
+  padding-left: 30px;
+}
+
+.box > .container > .slide > .item {
+  height: 40px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  cursor: pointer;
+}
+
+.box > .container > .slide > .item > i {
+  margin-right: 20px;
+}
+
+.box > .container > .slide > .item.active {
+  background-color: #ccc;
+  color: #fff;
+}

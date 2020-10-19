@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/index.css">
+  <link rel="stylesheet" href="../css/goods.css">
+  <link rel="stylesheet" href="//at.alicdn.com/t/font_2052356_mqwv5x29z8n.css">
+</head>
+<body>
+  <div class="box">
+    <div class="header">
+      <div class="left">
+        <a href="/index.html">
+          LOGO
+        </a>
+      </div>
+      <div class="center">
+        商品管理模块
+      </div>
+      <div class="right">
+        <p class="nickname">昵称</p>
+        <button class="logout">注销</button>
+      </div>
+    </div>
+    <div class="container">
+      <div class="slide">
+        <div class="item">
+          <i class="iconfont icon-users"></i>
+          <span><a href="/index.html">用户管理</a></span>
+        </div>
+        <div class="item">
+          <i class="iconfont icon-banner"></i>
+          <span><a href="/views/banner.html">轮播图管理</a></span>
+        </div>
+        <div class="item active">
+          <i class="iconfont icon-goods"></i>
+          <span>商品管理</span>
+        </div>
+        <div class="item">
+          <i class="iconfont icon-gerenzhongxin"></i>
+          <span><a href="/views/self.html">个人中心</a></span>
+        </div>
+      </div>
+      <div class="content">
+        <div class="filter">
+          <select>
+            <option value="all">全部</option>
+            <option value="电脑">电脑</option>
+            <option value="家具">家具</option>
+          </select>
+          <input type="search" class="search">
+          <button>添加商品</button>
+        </div>
+
+        <div class="pagination">
+          <select>
+            <option value="12">12 条 / 页</option>
+            <option value="18">18 条 / 页</option>
+            <option value="20">20 条 / 页</option>
+          </select>
+          <p class="first">首页</p>
+          <p class="prev">上一页</p>
+          <ul class="item_list">
+            <li data-index="1" >1</li>
+            <li data-index="2" >2</li>
+            <li data-index="3" >3</li>
+            <li data-index="4" >4</li>
+            <li data-index="5" class="active">5</li>
+            <li data-index="6" >6</li>
+            <li data-index="7" >7</li>
+            <li data-index="8" >8</li>
+            <li data-index="9" >9</li>
+          </ul>
+          <p class="next">下一页</p>
+          <p class="last">末页</p>
+          <input type="text" value="1" class="go">
+          <span> 1 / 21 </span>
+        </div>
+
+        <div class="goods_list">
+          <table border="1" cellspacing="0">
+            <thead>
+              <tr>
+                <th>序号</th>
+                <th>商品图片</th>
+                <th>商品名称</th>
+                <th>商品分类</th>
+                <th>商品描述</th>
+                <th>商品价格</th>
+                <th>商品库存</th>
+                <th>操作</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>
+                  <div class="img">
+                    <img src="https://img12.360buyimg.com/seckillcms/s140x140_jfs/t1/115616/9/16667/30634/5f4e451eE8c0e67e1/536e9e54ef66ac02.jpg.webp" alt="">
+                  </div>
+                </td>
+                <td width="160px">asasdasdasd asdasd 萨达萨达
+                  ad 锕三大 sdfsf士大夫士大夫手动返所发生的的发
+                </td>
+                <td>电脑</td>
+                <td width="160px">asdasdasdas</td>
+                <td>￥ 1234.21</td>
+                <td>99</td>
+                <td>
+                  <button>删除</button>
+                  <button>编辑</button>
+                </td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>
+                  <div class="img">
+                    <img src="https://img12.360buyimg.com/seckillcms/s140x140_jfs/t1/115616/9/16667/30634/5f4e451eE8c0e67e1/536e9e54ef66ac02.jpg.webp" alt="">
+                  </div>
+                </td>
+                <td width="160px">asasdasdasd asdasd 萨达萨达
+                  ad 锕三大 sdfsf士大夫士大夫手动返所发生的的发
+                </td>
+                <td>电脑</td>
+                <td width="160px">asdasdasdas</td>
+                <td>￥ 1234.21</td>
+                <td>99</td>
+                <td>
+                  <button>删除</button>
+                  <button>编辑</button>
+                </td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>
+                  <div class="img">
+                    <img src="https://img12.360buyimg.com/seckillcms/s140x140_jfs/t1/115616/9/16667/30634/5f4e451eE8c0e67e1/536e9e54ef66ac02.jpg.webp" alt="">
+                  </div>
+                </td>
+                <td width="160px">asasdasdasd asdasd 萨达萨达
+                  ad 锕三大 sdfsf士大夫士大夫手动返所发生的的发
+                </td>
+                <td>电脑</td>
+                <td width="160px">asdasdasdas</td>
+                <td>￥ 1234.21</td>
+                <td>99</td>
+                <td>
+                  <button>删除</button>
+                  <button>编辑</button>
+                </td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>
+                  <div class="img">
+                    <img src="https://img12.360buyimg.com/seckillcms/s140x140_jfs/t1/115616/9/16667/30634/5f4e451eE8c0e67e1/536e9e54ef66ac02.jpg.webp" alt="">
+                  </div>
+                </td>
+                <td width="160px">asasdasdasd asdasd 萨达萨达
+                  ad 锕三大 sdfsf士大夫士大夫手动返所发生的的发
+                </td>
+                <td>电脑</td>
+                <td width="160px">asdasdasdas</td>
+                <td>￥ 1234.21</td>
+                <td>99</td>
+                <td>
+                  <button>删除</button>
+                  <button>编辑</button>
+                </td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>
+                  <div class="img">
+                    <img src="https://img12.360buyimg.com/seckillcms/s140x140_jfs/t1/115616/9/16667/30634/5f4e451eE8c0e67e1/536e9e54ef66ac02.jpg.webp" alt="">
+                  </div>
+                </td>
+                <td width="160px">asasdasdasd asdasd 萨达萨达
+                  ad 锕三大 sdfsf士大夫士大夫手动返所发生的的发
+                </td>
+                <td>电脑</td>
+                <td width="160px">asdasdasdas</td>
+                <td>￥ 1234.21</td>
+                <td>99</td>
+                <td>
+                  <button>删除</button>
+                  <button>编辑</button>
+                </td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>
+                  <div class="img">
+                    <img src="https://img12.360buyimg.com/seckillcms/s140x140_jfs/t1/115616/9/16667/30634/5f4e451eE8c0e67e1/536e9e54ef66ac02.jpg.webp" alt="">
+                  </div>
+                </td>
+                <td width="160px">asasdasdasd asdasd 萨达萨达
+                  ad 锕三大 sdfsf士大夫士大夫手动返所发生的的发
+                </td>
+                <td>电脑</td>
+                <td width="160px">asdasdasdas</td>
+                <td>￥ 1234.21</td>
+                <td>99</td>
+                <td>
+                  <button>删除</button>
+                  <button>编辑</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="../node_modules/art-template/lib/template-web.js"></script>
+  <script src="../node_modules/axios/dist/axios.min.js"></script>
+  <script src="../lib/instance.js"></script>
+  <script src="../js/goods.js"></script>
+</body>
+</html>
